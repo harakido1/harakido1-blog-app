@@ -4,7 +4,7 @@ Styling with react-materialize.<br />
 Navbar: title, home which retrieves blogs to the body, new blog form.<br />
 Body: displays all blogs.<br />
 
-START:<br />
+WHEN CLONED, START:<br />
 $ npx json-server --watch data/db.json --port 8000 <br />
 $ npm run start <br />
 $ npx cypress open <br />
