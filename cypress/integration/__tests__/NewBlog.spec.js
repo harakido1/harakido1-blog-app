@@ -1,6 +1,9 @@
 describe("New Blog component", () => {
+    beforeEach(() => {
+        cy.visit("/");
+    });
+
     it("should render the New Blog component", () => {
-        cy.visit("http://localhost:3000/");
         cy.get(".right > :nth-child(2) > .lobster > h4")
             .contains("New Blog")
             .click();

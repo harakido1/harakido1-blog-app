@@ -1,6 +1,9 @@
 describe("Navbar Component", () => {
+    beforeEach(() => {
+        cy.visit("/");
+    });
+
     it("should contain the title", () => {
-        cy.visit("http://localhost:3000/");
         cy.document().its("contentType").should("eq", "text/html");
         cy.get(".brand-logo");
         cy.get(".right > :nth-child(1) > .lobster");

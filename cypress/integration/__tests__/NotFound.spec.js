@@ -1,6 +1,9 @@
 describe("Error 404", () => {
+    beforeEach(() => {
+        cy.visit("/");
+    });
+
     it("should navigate to a 404 page", () => {
-        cy.visit("http://localhost:3000/something");
         cy.get("h2").contains("Sorry");
         cy.get("p").contains(
             "The page you are looking for is not available..."
